@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/image_button_upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="upvote" />
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/image_button_upvote"
+            android:orientation="vertical"
+            android:text="310"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal">
+
+        </TextView>
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:id="@+id/linear_layout_text"
+        android:layout_toRightOf="@id/linear_layout_points"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"-->
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/linear_layout_points"
+        android:text="Stephen est élu ingénieur de l'année" />
+
+    <TextView
+        android:id="@+id/link_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_below="@id/title_text_view"
+        android:layout_toRightOf="@id/linear_layout_points"
+        android:text="(google.com)" />
+
+
+    <TextView
+        android:id="@+id/number_comments_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link_text_view"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/linear_layout_points"
+        android:text="# comments" />
+
+    <TextView
+        android:id="@+id/time_and_author_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_comments_text_view"
+        android:layout_toRightOf="@id/linear_layout_points"
+        android:text="3h ago by Beber" />
+    <!--/LinearLayout-->
+
+
+</RelativeLayout>
+
+
